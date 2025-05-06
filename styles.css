@@ -217,6 +217,25 @@ footer .space { color:#bdd4de; }
 	color:#40606f;
 }
 
+#mainnav ul li a {
+	display:block;
+	background:#f69331;
+	color:#ebebeb;
+	font-weight:700;
+	font-size:36px;
+	line-height:50px;
+	text-decoration:none;
+	text-transform:uppercase;
+	text-align:right;
+	padding-right: 20px;
+	width:180px;
+	border-bottom: 1px solid #ca6a0c;
+}
+
+#mainnav ul li a:hover {
+	background:#40606f;
+}
+
 /************ Responsive Media Queries ***************/
 
 @media only screen and (min-width: 600px) {
@@ -248,27 +267,7 @@ footer .space { color:#bdd4de; }
 	#top p, footer p {
 		font-size: 24px;
 	}
-	
-}
 
-@media only screen and (min-width: 960px) {
-	
-	#page {
-		width:960px;
-		margin:auto;
-	}
-	
-	header h1, footer h1 {
-		font-size:100px;
-	}
-	
-	header h2 {
-		font-size: 36px;
-	}
-}
-/************** DESKTOP NAV STYLES ***********/
-
-@media only screen and (min-width: 600px){
 	#mobilenav {
 		display: none;
 	}
@@ -297,6 +296,28 @@ footer .space { color:#bdd4de; }
 		border-bottom: none;
 		border-right: 1px solid #ca6a0c;
 	}
+	
+}
+
+@media only screen and (min-width: 960px) {
+	
+	#page {
+		width:960px;
+		margin:auto;
+	}
+	
+	header h1, footer h1 {
+		font-size:100px;
+	}
+	
+	header h2 {
+		font-size: 36px;
+	}
+}
+/************** DESKTOP NAV STYLES ***********/
+
+@media only screen and (min-width: 600px){
+
 }
 
 

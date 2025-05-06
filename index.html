@@ -276,6 +276,22 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<script>
+		$('#mobilenav h2').click(function(){
+	$('#mainnav').slideToggle('slow');
+});
+
+function showHideMenu(){
+
+	var viewportWidth = $(window).width();
+
+	if(viewportWidth > 600){
+		$('#mainnav').show();	
+	} else{
+		$('#mainnav').hide();
+	}
+}
+
+showHideMenu();
 		$('.flip-container').bind("touchstart mouseenter", function(e) {
 
 			e.stopPropagation();
@@ -300,6 +316,10 @@
 			}
 
 		});
+
+		$( window ).resize(function() {
+	showHideMenu();
+});
 
 	</script>
 
