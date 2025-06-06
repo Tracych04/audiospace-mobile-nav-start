@@ -8,6 +8,9 @@ h1, h2, h3, p, ul, ol {
 	margin: 0;
 	padding: 0;
 }
+ul{
+	list-style-type:none;
+}
 
 /********* End CSS Reset *********/
 
@@ -19,6 +22,48 @@ body {
 
 header {
 	padding:0 15px 20px 15px;
+}
+
+#navall{
+	position: relative;
+}
+
+#navmobile{
+	background: #f69331;
+	padding-right: 20px;
+	margin-bottom: 20px;
+}
+#navmobile h2{
+	text-align: right;
+	line-height: 50px;
+	font-size: 36px;
+	color: #ebebeb;
+}
+
+#navreg{
+	position: absolute;
+	right:0px;
+	top:50px;
+	width: 200px;
+}
+#navreg ul{
+	background-color: #f69331;
+	font-size: 36px;
+}
+#navreg ul li a{
+	text-decoration: none;
+	display: block;
+	background-color: #f69331;
+	font-size: 36px;
+	line-height: 50px;
+	text-align: right;
+	padding-right: 20px;
+	text-transform: uppercase;
+	color: #ebebeb;
+	font-weight: 700;
+}
+#navreg ul li a:hover{
+	background: #40606f;
 }
 
 section{ padding: 30px 15px; }
